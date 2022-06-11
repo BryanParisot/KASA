@@ -1,10 +1,11 @@
+import Banner from "../components/Banner/Banner";
 import Navigation from "../components/Navigation/Navigation";
 
 const Home = () => {
     return(
         <div>
             <Navigation/>
-            <div>Home</div>
+            <Banner src="./pictures/banner1.png" title="Chez vous, partout et ailleurs" />
         </div>
     );
 };
