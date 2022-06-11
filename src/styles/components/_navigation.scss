@@ -1,0 +1,39 @@
+.navigation{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 40px 100px 0 100px;
+
+    img{
+        width: 210px;
+        height: 68px;
+    }
+
+    .nav-active{
+        border-bottom: 1px solid ;
+    }
+
+    .link{
+        margin-right: 50px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+       .navigation{
+           padding: 10px 20px 0 20px;
+           font-size: 12px;
+
+            img{
+                width: 145px;
+                height: 47px;
+        }    
+           .link{
+                 margin-right: 10px;
+          } 
+
+    
+     } 
+        
+}
