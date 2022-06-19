@@ -1,10 +1,13 @@
+import Banner from "../components/Banner/Banner";
+import DropDownLarge from "../components/DropDown/DropDownLarge";
 import Navigation from "../components/Navigation/Navigation";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <Navigation />
-      <div>A propos</div>
+      <Banner src="./pictures/banner2.png" />
+      <DropDownLarge/>
     </div>
   );
 };

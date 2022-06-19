@@ -1,0 +1,48 @@
+.dropDownLarge {
+  .contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+  }
+  .contain_title_svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    height: 47px;
+    width: 1023px;
+    padding: 0 19px 0px 19px;
+    margin-top: 31px;
+    background-color: $primary;
+    z-index: 1;
+    cursor: pointer;
+
+    p {
+      color: white;
+      font-size: 24px;
+    }
+
+    span {
+      color: white;
+    }
+  }
+
+  .contain_text {
+    display: none;
+    background: #f7f7f7;
+    border-radius: 0px 0px 5px 5px;
+    width: 1023px;
+    overflow: hidden;
+    margin-top: -10px;
+    padding: 20px 18px 19px 18px;
+  }
+
+  .show {
+    @extend .contain_text;
+    display: flex;
+
+  }
+}
