@@ -1,0 +1,14 @@
+.home {
+  padding: 0 100px 0 100px;
+  .contain-announcement {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    justify-content: center;
+    column-gap:60px;
+    row-gap: 50px;
+    margin-top: 43px;
+    background-color: $secondary;
+    padding: 56px 50px 56px 50px;
+    border-radius: 25px;
+  }
+}

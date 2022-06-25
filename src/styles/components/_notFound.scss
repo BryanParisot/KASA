@@ -1,24 +1,24 @@
-.not-found{
-    .contain-not-found{
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 60px;
+.not-found {
+  padding: 0 100px 0 100px;
+  .contain-not-found {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
 
-        h2{
-            font-size: 263px;
-        }
-
-        p{
-            font-size: 36px;
-        }
-
-        .link-not-found{
-            font-size: 18px;
-            border-bottom: 1px solid;
-        }
-
+    h2 {
+      font-size: 263px;
     }
+
+    p {
+      font-size: 36px;
+    }
+
+    .link-not-found {
+      font-size: 18px;
+      border-bottom: 1px solid;
+    }
+  }
 }
