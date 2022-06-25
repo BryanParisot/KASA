@@ -10,7 +10,7 @@ const NotFound = () => {
         <p>Oups! La page que vous demandez n'existe pas</p>
         <NavLink className="link-not-found" to="/">
           {" "}
-          Retounrer sur la page d'accueil
+          Retourner sur la page d'accueil
         </NavLink>
       </div>
     </div>
