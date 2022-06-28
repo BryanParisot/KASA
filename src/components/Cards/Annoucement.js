@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { useFetch } from "../../utils/hooks";
 
 const Announcement = () => {
-  const [data, setData] = useState([]);
-
-
-  useEffect(() => {
-    axios.get("./json/data.json").then((res) => setData(res.data));
-  }, []);
-
+  const data = useFetch("./json/data.json");
+  
   return (
     <>
       {data.map((item) => (

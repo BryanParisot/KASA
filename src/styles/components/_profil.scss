@@ -1,0 +1,20 @@
+.profil {
+  display: flex;
+  align-items: center;
+
+  p {
+    width: 70px;
+    margin-right: 10px;
+  }
+  .picture {
+
+    img {
+      max-width: 64px;
+      max-height: 64px;
+      border-radius: 50%;
+    }
+  }
+}
+.contain_stars {
+  margin-top: 25px;
+}
