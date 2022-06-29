@@ -13,10 +13,10 @@ const Announce = () => {
   return (
     <div className="announce">
       <Navigation />
-      <Slider />
       {datas.map((item) =>
         item.id === id ? (
           <div>
+            <Slider images={item.pictures} />
             <div className="contain_more_information">
               <div className="contain_title_subtitle">
                 <h2>{item.title}</h2>

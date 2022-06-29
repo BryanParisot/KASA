@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const DropDown = (props, equipement = null) => {
+const DropDown = (props) => {
   const [selected, setSelected] = useState(false);
 
   const onClickTrue = () => setSelected(true);
@@ -46,7 +46,7 @@ const DropDown = (props, equipement = null) => {
           {props.equipement === undefined ? (
             <p>{props.content} </p>
           ) : (
-            props.equipement.map((i) => <p className="text_list" key={i}> {i}</p>)
+            props.equipement.map((i) => <p className="text_list" key={i}>{i}</p>)
           )}
         </div>
       </div>

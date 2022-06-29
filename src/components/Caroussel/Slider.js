@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Slider = () => {
+// const data = [
+//   {
+//     img: "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+//   },
+//   {
+//     img: "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
+//   },
+// ];
+
+const Slider = (props) => {
+  const [current, setCurrent] = useState(0);
+  const length = props.images.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  console.log(current);
+
+  if (!Array.isArray(props.images) || props.images.length <= 0) {
+    return null;
+  }
   return (
-    <div className="slider">
+    <div className="slide">
+      {props.images.map((i, index) => {
+        return (
+          <div
+            className={current === index ? "slide active" : "slide"}
+            key={index}
+          >
+            {current === index && <img className="slider" src={i} alt={i} />}
+          </div>
+        );
+      })}
       <span className="left_arrow">
         <svg
+          onClick={prevSlide}
           width="48"
           height="80"
           viewBox="0 0 48 80"
@@ -19,6 +54,7 @@ const Slider = () => {
       </span>
       <span className="right_arrow">
         <svg
+          onClick={nextSlide}
           width="48"
           height="80"
           viewBox="0 0 48 80"
