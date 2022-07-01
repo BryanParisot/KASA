@@ -3,15 +3,16 @@ import { useFetch } from "../../utils/hooks";
 
 const Announcement = () => {
   const data = useFetch("./json/data.json");
-  
+
   return (
     <>
-      {data.map((item) => (
-        <div key={item.id} className="announcement">
-          <NavLink to={"/announce/" + item.id}>
+      {data.map((item, index) => (
+        <NavLink key={index} to={"/announce/" + item.id}>
+          <div className="announcement">
+            <img src={item.cover} alt="" />
             <p key={item.title}>{item.title}</p>
-          </NavLink>
-        </div>
+          </div>
+        </NavLink>
       ))}
     </>
   );
