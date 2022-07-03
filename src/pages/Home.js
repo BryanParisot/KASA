@@ -1,9 +1,11 @@
 import Banner from "../components/Banner/Banner";
 import Announcement from "../components/Cards/Annoucement";
 import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   return (
+    <>
     <div className="home">
       <Navigation />
       <Banner
@@ -14,6 +16,8 @@ const Home = () => {
         <Announcement />
       </div>
     </div>
+    <Footer img="../pictures/LOGO-WHITE.png" />
+</>
   );
 };
 export default Home;
