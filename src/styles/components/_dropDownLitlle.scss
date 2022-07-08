@@ -46,3 +46,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contain {
+    width: 100%;
+
+    .contain_title_svg {
+      width: auto;
+    }
+    .contain_text{
+      width: auto;
+    }
+  }
+}

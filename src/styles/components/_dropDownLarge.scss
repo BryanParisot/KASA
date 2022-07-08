@@ -1,11 +1,9 @@
 .dropDownLarge {
-  .contain{
+  .contain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-
   }
   .contain_title_svg {
     display: flex;
@@ -43,6 +41,11 @@
   .show {
     @extend .contain_text;
     display: flex;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .contain {
+    align-items: stretch !important;
   }
 }
