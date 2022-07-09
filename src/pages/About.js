@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <Navigation />
+        <Navigation logo='./pictures/LOGO.png' />
         <Banner src="./pictures/banner2.png" />
         <DropDownLarge />
       </div>

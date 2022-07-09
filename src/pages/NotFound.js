@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <>
       <div className="not-found">
-        <Navigation />
+        <Navigation  logo='./pictures/LOGO.png'/>
         <div className="contain-not-found">
           <h2>404</h2>
           <p>Oups! La page que vous demandez n'existe pas</p>

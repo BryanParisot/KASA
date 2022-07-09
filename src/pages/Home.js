@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <div className="home">
-      <Navigation />
+      <Navigation logo='./pictures/LOGO.png' />
       <Banner
         src="./pictures/banner1.png"
         title="Chez vous, partout et ailleurs"
