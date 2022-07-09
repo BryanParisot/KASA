@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <div className="navigation">
-      <img src="./pictures/LOGO.png" alt="Logo" />
+      <img src={props.logo} alt="Logo" />
       <div className="nav-link">
         <NavLink className="link" exact to="/" activeClassName="nav-active">
           Accueil
