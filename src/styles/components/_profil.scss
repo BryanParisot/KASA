@@ -18,6 +18,18 @@
   margin-top: 25px;
 }
 
+@media only screen and (max-width: 900px) {
+  .contain_stars {
+    margin-top: 0px !important;
+
+    svg{
+      height: 22px;
+      width: 25px;
+    }
+  }
+
+}
+
 @media only screen and (max-width: 700px) {
   .profil {
     p {
@@ -30,12 +42,8 @@
         max-height: 32px;
       }
     }
-    svg{
-      height: 15px;
-    }
   }
   .contain_stars {
-    margin-top: 0px;
 
       span{
         height: 48px;
