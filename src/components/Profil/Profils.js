@@ -15,6 +15,7 @@ const Profils = (props) => {
           {Array.from(Array(parseInt(props.rating - 1)), (e, i) => {
             return (
               <svg
+                key={i}
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -32,6 +33,7 @@ const Profils = (props) => {
           {Array.from(Array(5 - parseInt(props.rating - 1)), (e, i) => {
             return (
               <svg
+                key={i}
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

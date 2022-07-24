@@ -14,18 +14,18 @@ const Announce = () => {
   return (
     <>
       <div className="announce">
-        <Navigation logo='../pictures/LOGO.png' />
-        {datas.map((item) =>
+        <Navigation logo="../pictures/LOGO.png" />
+        {datas.map((item, i) =>
           item.id === id ? (
-            <div>
+            <div key={i}>
               <Slider images={item.pictures} />
               <div className="contain_more_information">
                 <div className="contain_title_subtitle">
                   <h2>{item.title}</h2>
                   <p>{item.location}</p>
                   <div className="contain_chips">
-                    {item.tags.map((i) => (
-                      <Chips text={i} />
+                    {item.tags.map((i,index) => (
+                      <Chips key={index} text={i} />
                     ))}
                   </div>
                 </div>
