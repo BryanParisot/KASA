@@ -18,7 +18,11 @@ const GuardedRoute = ({ component: Component, data, ...rest }) => {
     <Route
       {...rest}
       render={(props) =>
-        userExists ? <Component {...props} /> : <Redirect to="/404" />
+        userExists || data.length === 0 ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/404" />
+        )
       }
     />
   );
