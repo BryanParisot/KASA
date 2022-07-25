@@ -13,7 +13,7 @@ const DropDownLarge = () => {
   return (
     <div className="dropDownLarge">
       {data.map((item, i) => (
-        <div className="contain">
+        <div key={i} className="contain">
           <div className="contain_title_svg" onClick={() => toggle(i)}>
             <p>{item.title}</p>
             {selected === i ? (
