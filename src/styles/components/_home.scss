@@ -4,11 +4,26 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 340px);
     justify-content: center;
-    column-gap:60px;
+    column-gap: 60px;
     row-gap: 50px;
     margin-top: 43px;
     background-color: $secondary;
     padding: 56px 50px 56px 50px;
     border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    padding: 0 19px 0 19px;
+    .contain-announcement {
+      display: flex;
+flex-direction: column;
+      justify-items: center;
+      background-color: white;
+      row-gap: 20px;
+      padding-top: 0px;
+      padding: 0px 0px 0px 0px;
+    }
   }
 }

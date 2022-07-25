@@ -1,0 +1,27 @@
+.chips{
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 14px 25px;
+
+    p{
+        color: white;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .chips{
+        margin-bottom: 5px;
+        p{
+            font-size: 10px;
+        }
+    }
+}
