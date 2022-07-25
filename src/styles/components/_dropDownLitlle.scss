@@ -51,11 +51,25 @@
   .contain {
     width: 100%;
 
+    svg {
+      height: 10px;
+    }
+
     .contain_title_svg {
       width: auto;
+      height: 30px;
+
+      p {
+        font-size: 13px;
+      }
     }
-    .contain_text{
+
+    .text_list {
+      font-size: 12px;
+    }
+    .contain_text {
       width: auto;
+      font-size: 12px;
     }
   }
 }

@@ -40,11 +40,11 @@ const Announce = () => {
               </div>
               <div className="contain_dropdown">
                 <DropDownLitlle
-                  title="description"
+                  title="Description"
                   content={item.description}
                 />
                 <DropDownLitlle
-                  title="equipments"
+                  title="Équipments"
                   equipement={item.equipments}
                 />
               </div>
